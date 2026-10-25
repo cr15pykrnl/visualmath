@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "destination": "cr15pykrnl/visualmath",
+  "rules": [
+    {
+      "pattern": ".gitignore",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "AGENTS.md",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "README.md",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "contributing.md",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "release-manifest.json",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/README.md",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/provenance.json",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/visualmath.tex",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/plot-panel.tex",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/visualmath.gp",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/review-counts.csv",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/feature-results.csv",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/build.sh",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/assets/visualmath.png",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": "figures/abstracts/assets/visualmath-plot.png",
+      "access": "public",
+      "reason": "Owner-approved publication companion, original figure sources, attributed reported-value tables and selected PNG/SVG exports."
+    },
+    {
+      "pattern": ".local/*",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "*.pdf",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "*.PDF",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "*.docx",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "*.xlsx",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "manuscript/*",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "papers/*",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "review/*",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "provenance/*",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "data/*",
+      "access": "private",
+      "reason": "Excluded local intermediates, manuscript files or private records; never a publication artifact."
+    },
+    {
+      "pattern": "figures/abstracts/assets/visualmath-plot.svg",
+      "access": "public",
+      "reason": "Owner-selected SVG export of reviewed original graphical abstract; embedded artwork retains its existing attribution and rights."
+    },
+    {
+      "pattern": "figures/abstracts/assets/visualmath.svg",
+      "access": "public",
+      "reason": "Owner-selected SVG export of reviewed original graphical abstract; embedded artwork retains its existing attribution and rights."
+    }
+  ],
+  "reviews": [
+    {
+      "path": "figures/abstracts/assets/visualmath.png",
+      "sha256": "a48d6f24b6a37ccb52d5301376ab65d563e3a7b66aee8691627b3c272cdd15e6",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    },
+    {
+      "path": "figures/abstracts/assets/visualmath-plot.png",
+      "sha256": "7bb177d7ed8f8b07c04eb7a503978c17fb992c0e487032191fbb6752b4350234",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    },
+    {
+      "path": "figures/abstracts/assets/visualmath-plot.svg",
+      "sha256": "4bbfa3b0b2d671c15b0de2b3a4767ed6be6ea02b4d2212381eed2d6411ecd821",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    },
+    {
+      "path": "figures/abstracts/assets/visualmath.svg",
+      "sha256": "1958645df5cfc92caa7cbaf2b497e3734ad365ae7667a111a8ff68c3888a83f2",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    }
+  ]
+}

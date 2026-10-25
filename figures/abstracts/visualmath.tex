@@ -1,0 +1,60 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{graphicx}
+\renewcommand{\familydefault}{\sfdefault}
+\graphicspath{{../../.local/figures/plots/}}
+\usetikzlibrary{arrows.meta,calc}
+\tikzset{flow/.style={-{Stealth[length=1.5mm,width=1.05mm]},line width=.7pt}}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=round,
+ every node/.style={font=\fontsize{9}{11}\selectfont,text=black,inner sep=1pt}]
+\path[use as bounding box] (0,0) rectangle (240,180);
+\draw (8,126) rectangle (232,174);
+\node[anchor=west] at (12,169.5) {A. Representation design is an auditable research step};
+\node at (29,161.5) {Physical fields};
+\draw[flow] (49,161.5)--(87,161.5);
+\node at (120,161.5) {Representation choices};
+\draw[flow] (155,161.5)--(190,161.5);
+\node at (210,161.5) {Model inputs};
+% Four equal 51 mm cells, 4 mm gutters and 4 mm outer padding.
+\foreach \cx/\title/\caption in {37.5/Encoding/Continuous or binary,92.5/Spatial/Crop and resolution,147.5/Augmentation/{Rotate, scale or mirror},202.5/Labels/Clusters or physical modes}{
+ \draw (\cx-25.5,129) rectangle (\cx+25.5,156);
+ \node at (\cx,152) {\title};
+ \node at (\cx,133) {\caption};
+}
+% Symbolic encoding and spatial operations; no fabricated measurements.
+\draw (20,139)--(20,147) (20,139)--(32,139);
+\draw (21,142) .. controls (24,148) and (26,138) .. (31,144);
+\draw[flow] (35,143)--(39,143);
+\draw (43,140)--(46,140)--(46,146)--(50,146)--(50,140)--(55,140);
+\draw (81,139) rectangle (104,147);
+\draw[dashed] (87,140) rectangle (98,146);
+\draw (142,140)--(134,140)--(134,147)--cycle;
+\draw (153,140)--(161,140)--(161,147)--cycle;
+\draw[dotted] (147.5,138.5)--(147.5,148);
+\draw[flow] (141,146) .. controls (143,149) and (151,149) .. (154,146);
+\foreach \xx/\yy in {187/145,189/143,192/146,194/144,188/140,194/140}{\fill (\xx,\yy) circle (.55);}
+\node at (201,143) {or};
+\draw (207,146)--(210,140)--(213,146);
+\draw (218,140)--(224,146) (218,146)--(224,140);
+\draw (8,107) rectangle (232,122);
+\node at (29,114.5) {10 audit questions};
+\foreach \i in {0,...,9}{\draw (59+6*\i,112.5) rectangle (62+6*\i,115.5);}
+\draw[flow] (121,114)--(143,114);
+\draw (147,109.5) rectangle (158,119.5);
+\foreach \yy in {112,114.5,117}{\draw (149,\yy)--(156,\yy);}
+\node[align=center] at (194,114.5) {Representation datasheet\\Choice / rationale / loss / alternatives};
+\draw (8,23) rectangle (118,103) (122,23) rectangle (232,103);
+\node[anchor=west] at (12,99) {B. Reporting versus testing representation choices};
+\node[anchor=west] at (126,99) {C. Representation efficiency in the prospective audit};
+\node at (177,93.5) {Audited reproduction; K-means targets};
+\node[anchor=south west,inner sep=0pt] at (10,34)
+ {\input{../../.local/figures/plots/visualmath-plot.tex}};
+\node[align=center] at (63,28.5) {28 selected studies, 2007--2025\\6 systematically compared alternatives};
+\node[align=center] at (177,28.5) {Separate physical-mode check: 82 hand-annotated frames\\Normalized mutual information 0.56; adjusted Rand index 0.30};
+\draw (8,3) rectangle (232,20);
+\node[anchor=west,align=left] at (12,11) {Audit what is assumed, discarded and inherited\\before treating model scores as physical evidence.};
+\node[anchor=east,align=right] at (228,11) {Singh and Dhari (2026), Machine Learning: Engineering 2, 025004.\\Sources: sections 3.7, 4.1 and 4.3; reported values replotted.\\Artwork: newly authored conceptual schematic.};
+\end{tikzpicture}
+\end{document}

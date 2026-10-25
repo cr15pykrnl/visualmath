@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "publication": {
+    "doi": "10.1088/3049-4761/ae7df3",
+    "authors": [
+      "Gaurav Singh",
+      "Rahul Singh Dhari"
+    ],
+    "journal": "Machine Learning: Engineering",
+    "volume": "2",
+    "issue": "2",
+    "article": "025004",
+    "published": "2026-07-27",
+    "metadata_sources": [
+      "https://api.crossref.org/works/10.1088/3049-4761/ae7df3",
+      "https://iopscience.iop.org/article/10.1088/3049-4761/ae7df3"
+    ],
+    "scientific_source": "Published article, sections 3.7, 4.1 and 4.3; not the earlier manuscript."
+  },
+  "artifact_scope": "New conceptual diagram and replots of published aggregate values; no publisher illustrations or manuscript files.",
+  "transformations": [
+    "Counts transcribed with common denominator 28; categories overlap.",
+    "Combined feature count derived as 4096 + 7 = 4103; accuracies transcribed unchanged.",
+    "Logarithmic feature-count axis and 65\u201376 percent accuracy range; direct labels.",
+    "Separate 82-frame physical-label comparison reported in a caption; not the accuracy plot denominator."
+  ],
+  "limitations": [
+    "No experiments rerun.",
+    "Underlying review scoring, audit code, frames and annotations not recovered into this companion.",
+    "Supplementary data-page contents not verified.",
+    "Selected literature sample and single case study; no population inference or physical ground-truth accuracy claim."
+  ],
+  "authoring": {
+    "artwork": "New native TikZ geometry; no generated bitmap or publisher figure inputs.",
+    "plots": "gnuplot 6.0.3, monochrome cairolatex",
+    "labels": "9 pt Helvetica-compatible native TeX",
+    "full_canvas_mm": [
+      240,
+      180
+    ],
+    "png_pixels": {
+      "visualmath.png": [
+        2400,
+        1800
+      ],
+      "visualmath-plot.png": [
+        2400,
+        1080
+      ]
+    },
+    "final_color": "Black/white vector artwork; anti-aliased grayscale PNG edges",
+    "layout": "Framed evidence panels; nested equal framework cells; right-aligned citation/source/credit footer."
+  },
+  "sha256": {
+    "visualmath.tex": "fc8a4f23ad80b7b19d063a2a9445f5ff06b8f872a4c03fc21ca0b1d2dd644c1a",
+    "plot-panel.tex": "3264b9be1212cbe6b3f1eccf6106bf78991c4e63787a30b01b62e6229a9e0c7c",
+    "visualmath.gp": "94fccb7fbf1b9a76d4930b84e5a523a25dc2f4e4e466e8175fae7a1e1247a6ce",
+    "review-counts.csv": "6ba3a16b1062a2a6c4ad8adf16f925cc2be1049413410ffdebd9ed2c5ad8f55a",
+    "feature-results.csv": "2f4e48c06b8d84641fbbe5d268e5c6bc00b77d766a8ac166aa5218aceb874d8e",
+    "build.sh": "b4d58eec649c1f896e1df7779ae65b979b3ccd92afbb2cd2edafafb551af69e1",
+    "assets/visualmath.png": "a48d6f24b6a37ccb52d5301376ab65d563e3a7b66aee8691627b3c272cdd15e6",
+    "assets/visualmath-plot.png": "7bb177d7ed8f8b07c04eb7a503978c17fb992c0e487032191fbb6752b4350234",
+    "assets/visualmath-plot.svg": "4bbfa3b0b2d671c15b0de2b3a4767ed6be6ea02b4d2212381eed2d6411ecd821",
+    "assets/visualmath.svg": "1958645df5cfc92caa7cbaf2b497e3734ad365ae7667a111a8ff68c3888a83f2"
+  },
+  "release_status": "Owner-selected publication companion, SVGs and anti-aliased PNG fallbacks. PDF intermediates excluded.",
+  "rendering": {
+    "mode": "Anti-aliased grayscale PNG and SVG (--svg; no --bilevel)",
+    "authored_palette": "Black strokes and labels on white; gray raster edge pixels provide coverage only.",
+    "png_bit_depth": 8,
+    "png_color_type": 0,
+    "text_alpha_bits": 4,
+    "graphics_alpha_bits": 4,
+    "svg_exporter": "Poppler pdftocairo",
+    "svg_embedded_raster_images": {
+      "assets/visualmath-plot.svg": 0,
+      "assets/visualmath.svg": 0
+    },
+    "pdf_policy": "Ignored local compilation intermediate; excluded from release."
+  },
+  "verification": "Owner selected the reviewed SVG and anti-aliased previews. All figures rebuilt through updated portable scripts; native 9 pt labels and page bounds checked. No new scientific experiment or model run."
+}

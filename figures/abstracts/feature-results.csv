@@ -1,0 +1,4 @@
+representation,feature_count,test_accuracy_percent
+Spatial summary,7,71.2
+Flattened image,4096,69.8
+Image plus spatial,4103,72.2
