@@ -78,5 +78,6 @@
     },
     "pdf_policy": "Ignored local compilation intermediate; excluded from release."
   },
-  "verification": "Owner selected the reviewed SVG and anti-aliased previews. All figures rebuilt through updated portable scripts; native 9 pt labels and page bounds checked. No new scientific experiment or model run."
+  "verification": "Owner selected the reviewed SVG and anti-aliased previews. All figures rebuilt through updated portable scripts; native 9 pt labels and page bounds checked. No new scientific experiment or model run.",
+  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged."
 }

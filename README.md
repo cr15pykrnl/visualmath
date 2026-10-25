@@ -4,7 +4,7 @@ Representation choices determine what information a model receives and which
 physical distinctions it can learn. This paper treats those choices as research
 decisions that should be explained, tested and documented alongside the model.
 
-![Graphical abstract: four representation categories, ten audit questions, a review of 28 studies and reported prospective case-study results](figures/abstracts/assets/visualmath.svg)
+[![Graphical abstract: four representation categories, ten audit questions, a review of 28 studies and reported prospective case-study results](figures/abstracts/assets/visualmath.png)](figures/abstracts/assets/visualmath.svg)
 
 [Editable figure and scientific source notes](figures/abstracts/README.md).
 
