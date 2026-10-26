@@ -52,16 +52,16 @@
     "layout": "Framed evidence panels; nested equal framework cells; right-aligned citation/source/credit footer."
   },
   "sha256": {
-    "visualmath.tex": "fc8a4f23ad80b7b19d063a2a9445f5ff06b8f872a4c03fc21ca0b1d2dd644c1a",
-    "plot-panel.tex": "3264b9be1212cbe6b3f1eccf6106bf78991c4e63787a30b01b62e6229a9e0c7c",
-    "visualmath.gp": "94fccb7fbf1b9a76d4930b84e5a523a25dc2f4e4e466e8175fae7a1e1247a6ce",
+    "visualmath.tex": "e88a00250bd769c2ef81b8fd71f2fe9c50b0f48979e94bd2d78eb6e53866cd05",
+    "plot-panel.tex": "ef7c42e08e764bc3b0cb4d8e9c26b85c4298ab317c4af17827ef07b229dd9e36",
+    "visualmath.gp": "68a83e187cebfe402b59964d332d825b9950ccaf5787745bebccb0fd31748a7b",
     "review-counts.csv": "6ba3a16b1062a2a6c4ad8adf16f925cc2be1049413410ffdebd9ed2c5ad8f55a",
     "feature-results.csv": "2f4e48c06b8d84641fbbe5d268e5c6bc00b77d766a8ac166aa5218aceb874d8e",
     "build.sh": "b4d58eec649c1f896e1df7779ae65b979b3ccd92afbb2cd2edafafb551af69e1",
-    "assets/visualmath.png": "a48d6f24b6a37ccb52d5301376ab65d563e3a7b66aee8691627b3c272cdd15e6",
-    "assets/visualmath-plot.png": "7bb177d7ed8f8b07c04eb7a503978c17fb992c0e487032191fbb6752b4350234",
-    "assets/visualmath-plot.svg": "4bbfa3b0b2d671c15b0de2b3a4767ed6be6ea02b4d2212381eed2d6411ecd821",
-    "assets/visualmath.svg": "1958645df5cfc92caa7cbaf2b497e3734ad365ae7667a111a8ff68c3888a83f2"
+    "assets/visualmath.png": "7e2df71dd316a5edda238cb6c6bf4ff3266fd1e8f7d73f47e973675ae03f55d2",
+    "assets/visualmath-plot.png": "9f867bb1e7feab5e88725c0cc4c6077c33d9a3222a2e6760174a73af1d924a89",
+    "assets/visualmath-plot.svg": "4415f682339df3efb5808024b3e00364505bb6233081fcdb619257bae9ffe7cb",
+    "assets/visualmath.svg": "2190123c912fcc2b85a6b9c45a4a2393bb6459c1ee280194ba5e218008b83e62"
   },
   "release_status": "Owner-selected publication companion, SVGs and anti-aliased PNG fallbacks. PDF intermediates excluded.",
   "rendering": {
@@ -79,5 +79,56 @@
     "pdf_policy": "Ignored local compilation intermediate; excluded from release."
   },
   "verification": "Owner selected the reviewed SVG and anti-aliased previews. All figures rebuilt through updated portable scripts; native 9 pt labels and page bounds checked. No new scientific experiment or model run.",
-  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged."
+  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged.",
+  "frame_layout": {
+    "page_outer_margin_mm": 3,
+    "main_panel_gutter_mm": 4,
+    "audit": "All exported PNG outer ink margins measured equal to within one pixel; renderer checks native font size and page bounds. Visual review covers nested clearances and optical balance.",
+    "exports": {
+      "visualmath-plot.png": {
+        "pixels": [
+          2400,
+          1080
+        ],
+        "visible_ink_margins_px": [
+          27,
+          27,
+          27,
+          27
+        ],
+        "sha256": "9f867bb1e7feab5e88725c0cc4c6077c33d9a3222a2e6760174a73af1d924a89"
+      },
+      "visualmath.png": {
+        "pixels": [
+          2400,
+          1800
+        ],
+        "visible_ink_margins_px": [
+          27,
+          27,
+          27,
+          27
+        ],
+        "sha256": "7e2df71dd316a5edda238cb6c6bf4ff3266fd1e8f7d73f47e973675ae03f55d2"
+      }
+    },
+    "plot_content_centers_mm": [
+      60.5,
+      179.5
+    ],
+    "plot_content_centering_verification": "Rendered complete plot ink bounds, excluding heading/caption, centered within 0.15 mm; actual measured errors 0 mm.",
+    "marker_label_clearance": "Native gnuplot direct-label offsets increased to 1.8 character units; visible marker-to-label gaps inspected.",
+    "framework_cell_insets_mm": {
+      "left": 3,
+      "right": 3,
+      "bottom": 3,
+      "cell_width": 54,
+      "gutter": 4
+    },
+    "border_width_pt": {
+      "main": 1.5,
+      "nested": 1
+    },
+    "corner_join": "Square miter joins; frame caps butt."
+  }
 }

@@ -83,3 +83,16 @@ These SVGs contain native vector geometry, plots and glyph outlines with no
 embedded bitmap images. Keep the TeX sources for editable labels.
 
 PNG fallbacks: [visualmath-plot](assets/visualmath-plot.png) · [visualmath](assets/visualmath.png)
+
+Outer frames use equal 3 mm page margins on every side, with 4 mm gutters
+between main panels/rows. Nested frames retain consistent visible clearances. Artwork proportions and native font sizes are preserved.
+
+The complete plot content, including axis titles, ticks and direct labels, is
+centered horizontally in each panel. Marker labels have a visible clearance
+from the marker edge; captions/subtitles follow their panel centerline.
+
+Repeated nested cells use equal 3 mm left, right and bottom insets. Their widths
+and centers are calculated from the parent bounds; glyph proportions are intact.
+
+Main frames use 1.5 pt borders; nested frames use 1 pt, with square miter joins. Plot axes and illustration
+strokes retain their independent weights.

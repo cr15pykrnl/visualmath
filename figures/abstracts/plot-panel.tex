@@ -6,20 +6,21 @@
 \graphicspath{{../../.local/figures/plots/}}
 \usetikzlibrary{arrows.meta,calc}
 \tikzset{flow/.style={-{Stealth[length=1.5mm,width=1.05mm]},line width=.7pt}}
+\tikzset{frameone/.style={line width=1.5pt,line join=miter,line cap=butt},frametwo/.style={line width=1pt,line join=miter,line cap=butt}}
 \begin{document}
-\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=round,
+\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=miter,
  every node/.style={font=\fontsize{9}{11}\selectfont,text=black,inner sep=1pt}]
 \path[use as bounding box] (0,0) rectangle (240,108);
-\draw (8,23) rectangle (118,103) (122,23) rectangle (232,103);
-\node[anchor=west] at (12,99) {B. Reporting versus testing representation choices};
-\node[anchor=west] at (126,99) {C. Representation efficiency in the prospective audit};
-\node at (177,93.5) {Audited reproduction; K-means targets};
+\draw[frameone] (3,23) rectangle (118,105) (122,23) rectangle (237,105);
+\node[anchor=west] at (7,101) {B. Reporting versus testing representation choices};
+\node[anchor=west] at (126,101) {C. Representation efficiency in the prospective audit};
+\node at (179.5,95.5) {Audited reproduction; K-means targets};
 \node[anchor=south west,inner sep=0pt] at (10,34)
  {\input{../../.local/figures/plots/visualmath-plot.tex}};
-\node[align=center] at (63,28.5) {28 selected studies, 2007--2025\\6 systematically compared alternatives};
-\node[align=center] at (177,28.5) {Separate physical-mode check: 82 hand-annotated frames\\Normalized mutual information 0.56; adjusted Rand index 0.30};
-\draw (8,3) rectangle (232,20);
-\node[anchor=west,align=left] at (12,11) {Audit what is assumed, discarded and inherited\\before treating model scores as physical evidence.};
-\node[anchor=east,align=right] at (228,11) {Singh and Dhari (2026), Machine Learning: Engineering 2, 025004.\\Sources: sections 3.7, 4.1 and 4.3; reported values replotted.\\Artwork: newly authored conceptual schematic.};
+\node[align=center] at (60.5,28.5) {28 selected studies, 2007--2025\\6 systematically compared alternatives};
+\node[align=center] at (179.5,28.5) {Separate physical-mode check: 82 hand-annotated frames\\Normalized mutual information 0.56; adjusted Rand index 0.30};
+\draw[frameone] (3,3) rectangle (237,19);
+\node[anchor=west,align=left] at (7,11) {Audit what is assumed, discarded and inherited\\before treating model scores as physical evidence.};
+\node[anchor=east,align=right] at (233,11) {Singh and Dhari (2026), Machine Learning: Engineering 2, 025004.\\Sources: sections 3.7, 4.1 and 4.3; reported values replotted.\\Artwork: newly authored conceptual schematic.};
 \end{tikzpicture}
 \end{document}
